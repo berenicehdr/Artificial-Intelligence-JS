@@ -13,11 +13,12 @@ pipeline {
 	
         )		
       }
-       step{
-         sh 'npm audit'
-         }
-
-
     }
+     stage('audit'){
+          step{
+            sh 'npm audit'
+        } 
+    }
+
   }
 }
