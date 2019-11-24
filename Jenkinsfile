@@ -8,17 +8,10 @@ pipeline {
       steps {
         snykSecurity(
         projectName: 'prueba_vulnerabilidades', severity: 'high', snykInstallation: 'SynkSecurity', snykTokenId: 'my-projectjs-snyk-api-token'
-         
-
-	
-        )		
+      	
+        )
+        sh 'npm audit'		
       }
-    }
-     stage('audit'){
-          step{
-            sh 'npm audit'
-        } 
-    }
-
+     }
   }
 }
