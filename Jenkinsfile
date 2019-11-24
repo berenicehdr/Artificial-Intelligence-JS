@@ -10,9 +10,7 @@ pipeline {
         projectName: 'prueba_vulnerabilidades', severity: 'medium', snykInstallation: 'SynkSecurity', snykTokenId: 'my-projectjs-snyk-api-token'
 
 
-	  sh '''
-         snyk test
-              '''
+	
         )		
       }
     }
