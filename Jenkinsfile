@@ -12,7 +12,7 @@ pipeline {
 
 	  sh '''
          snyk test
-              ‘’’
+              '''
         )		
       }
     }
